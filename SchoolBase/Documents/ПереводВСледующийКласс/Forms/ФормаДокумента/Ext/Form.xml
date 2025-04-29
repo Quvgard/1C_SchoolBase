@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Преподаватель" id="35">
+			<DataPath>Объект.Преподаватель</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПреподавательКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ПреподавательРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Класс" id="7">
+			<DataPath>Объект.Класс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлассКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлассРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">КлассПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="КлассНаДанныйМомент" id="57">
+			<DataPath>Объект.КлассНаМоментЗаписи</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлассНаДанныйМоментКонтекстноеМеню" id="58"/>
+			<ExtendedTooltip name="КлассНаДанныйМоментРасширеннаяПодсказка" id="59"/>
+		</InputField>
+		<InputField name="ГодУчебыС" id="10">
+			<DataPath>Объект.ГодУчебыС</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГодУчебыСКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ГодУчебыСРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ГодУчебыСПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ГодУчебыПо" id="13">
+			<DataPath>Объект.ГодУчебыПо</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГодУчебыПоКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ГодУчебыПоРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ГодУчебыПоПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Ученики" id="38">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Ученики</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="УченикиКонтекстноеМеню" id="39"/>
+			<AutoCommandBar name="УченикиКоманднаяПанель" id="40"/>
+			<ExtendedTooltip name="УченикиРасширеннаяПодсказка" id="41"/>
+			<SearchStringAddition name="УченикиСтрокаПоиска" id="42">
+				<AdditionSource>
+					<Item>Ученики</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УченикиСтрокаПоискаКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="УченикиСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="УченикиСостояниеПросмотра" id="45">
+				<AdditionSource>
+					<Item>Ученики</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УченикиСостояниеПросмотраКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="УченикиСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="УченикиУправлениеПоиском" id="48">
+				<AdditionSource>
+					<Item>Ученики</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="УченикиУправлениеПоискомКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="УченикиУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="УченикиНомерСтроки" id="51">
+					<DataPath>Объект.Ученики.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УченикиНомерСтрокиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="УченикиНомерСтрокиРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<InputField name="УченикиУченик" id="54">
+					<DataPath>Объект.Ученики.Ученик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="УченикиУченикКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="УченикиУченикРасширеннаяПодсказка" id="56"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПереводВСледующийКласс</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
