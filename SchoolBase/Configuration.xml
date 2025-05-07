@@ -246,28 +246,45 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>Основное</Subsystem>
-			<Subsystem>ИнформацияУчащихся</Subsystem>
-			<Subsystem>Документы</Subsystem>
-			<Subsystem>Отчеты</Subsystem>
+			<Subsystem>УчебныйПроцесс</Subsystem>
+			<Subsystem>КонтингентУчащихся</Subsystem>
+			<Subsystem>РесурсыИПланирование</Subsystem>
+			<Subsystem>АдминистрированиеИАнализ</Subsystem>
 			<CommonPicture>ОбщаяКартинка1</CommonPicture>
 			<CommonPicture>ОбщаяКартинка2</CommonPicture>
 			<CommonPicture>ОбщаяКартинка3</CommonPicture>
 			<CommonPicture>ОбщаяКартинка4</CommonPicture>
+			<CommonPicture>ОбщаяКартинка5</CommonPicture>
+			<CommonPicture>ОбщаяКартинка6</CommonPicture>
+			<CommonPicture>ОбщаяКартинка7</CommonPicture>
+			<CommonPicture>ОбщаяКартинка8</CommonPicture>
+			<Role>Администратор</Role>
+			<Role>УчЧасть</Role>
+			<Role>Директор</Role>
+			<Role>Учитель</Role>
 			<Catalog>Ученики</Catalog>
 			<Catalog>Родители</Catalog>
 			<Catalog>Предметы</Catalog>
 			<Catalog>Преподаватели</Catalog>
 			<Catalog>Классы</Catalog>
+			<Catalog>Аудитории</Catalog>
 			<Document>ДомашниеЗадания</Document>
 			<Document>КлассныеЧасы</Document>
 			<Document>Выпускники</Document>
 			<Document>ПереводВСледующийКласс</Document>
 			<Document>ПереводВДругойКласс</Document>
+			<Document>Посещаемость</Document>
+			<Document>Зачисление</Document>
+			<Document>Отчисление</Document>
+			<Document>СправкиПоБолезни</Document>
 			<Enum>Буквы</Enum>
+			<Enum>ВидыЯвки</Enum>
+			<Enum>ТипыПриказов</Enum>
 			<Report>ОтчетПоДомашнимЗаданиям</Report>
 			<Report>ОтчетПоКласснымЧасам</Report>
 			<Report>ОтчетПоВыпускникам</Report>
+			<Report>ОтчетПоПосещаемости</Report>
+			<Report>ОтчетПоБолезнямУчащихся</Report>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

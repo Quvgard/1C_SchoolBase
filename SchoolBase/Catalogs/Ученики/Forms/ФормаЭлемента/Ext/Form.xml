@@ -53,6 +53,12 @@
 				<Event name="OnChange">ПометкаОВыпускеПриИзменении</Event>
 			</Events>
 		</CheckBoxField>
+		<CheckBoxField name="ПометкаОбОтчислении" id="31">
+			<DataPath>Объект.ПометкаОбОтчислении</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПометкаОбОтчисленииКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПометкаОбОтчисленииРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

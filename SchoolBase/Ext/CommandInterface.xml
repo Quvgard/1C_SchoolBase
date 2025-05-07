@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.УчебныйПроцесс</Subsystem>
+		<Subsystem>Subsystem.КонтингентУчащихся</Subsystem>
+		<Subsystem>Subsystem.РесурсыИПланирование</Subsystem>
+		<Subsystem>Subsystem.АдминистрированиеИАнализ</Subsystem>
+		<Subsystem>1e3af796-9b4f-414e-bbe9-6b5b39fee99e</Subsystem>
+		<Subsystem>46998e25-44a4-4bd8-8c0d-eaf5b2e8b470</Subsystem>
+		<Subsystem>6e6cead4-23f4-431a-af7d-e1896cb91547</Subsystem>
+		<Subsystem>f7ea90a3-0b02-4408-b5a0-4e2a58df6ed5</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>
